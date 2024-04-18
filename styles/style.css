@@ -1,0 +1,320 @@
+.navbar .container{
+    background-color: #fff;
+    height: 70px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: darkolivegreen;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #000;
+}
+
+@media (min-width: 991px) {
+    .login-button-hide {
+        display: none;
+    }
+
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: darkolivegreen;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link:active::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .Login-Button {
+        display: none;
+    }
+
+    .navbar{ 
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .tele .box {
+        padding: 3px;
+        margin: 0 auto;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .tele .box img{
+        max-width: 120vw;
+    }
+
+    .sign-up .container .form{
+        width: 90vw;
+    }
+
+    .achieve .left i{
+        font-size: 10vw;
+    }
+
+    .f-links{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .f-row1, .f-row2{
+        width: 100%;
+    }
+
+}
+
+.background {
+    background: url(bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.background::before{
+    background-color: rgba(0,0,0,0.4);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+.background .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.background h1{
+    font-size: 1.5em;
+}
+
+.background h2{
+    font-size: 1.2em;
+}
+
+.view {
+    width: fit-content;
+    font-weight: 500;
+    border: none;
+    padding: 1em;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.view:hover{
+    box-shadow: 2px  4px 4px black;
+}
+
+.tele .box{
+    background-color: rgb(0, 213, 255);
+    display: flex;
+    padding: 3vh 2vw 2vw 3vh;
+    margin: 10vh 0 15vh;
+}
+
+.tele .box img{
+    margin: 10px ;
+}
+
+.content{
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.achieve{
+    margin-top: 10px;
+    width: 80%;
+}
+
+.achieve .col-6{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.achieve .left {
+    font-size: 3vw;
+}
+
+.activity{
+    background-color: beige;
+    margin-bottom: 10vh;
+}
+
+.activity .row{
+    padding: 2vh;
+    gap: 1vmax;
+}
+
+.activity .row .col-md{
+    background-color: #fff;
+    height: 25vh;
+}
+
+.activity .row .col-md div img{
+    height: 80%;
+    width: 70%;
+}
+
+.sign-up{
+    background: url(https://plus.unsplash.com/premium_photo-1673603988651-99f79e4ae7d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.sign-up .container{
+    height: 50vh;
+    z-index: 1;
+    position: relative;
+}
+
+.sign-up h1{
+    font-size: 1.5em;
+}
+
+.sign-up h2{
+    font-size: 1.2em;
+}
+
+.form{
+    width: 50vw;
+}
+.wrapper{
+    position: relative;
+    width: 90%;
+}
+
+.wrapper input{
+    background: rgba(255,255,255,0.3);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    width: 100%;
+    columns: #fff;
+}
+
+.wrapper input::placeholder{
+    color: #fff;
+}
+
+.wrapper input{
+    outline: none;
+    box-shadow: none;
+}
+
+.wrapper button{
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 50%;
+    padding: auto 3px 3px auto;
+    width: max-content;
+    position: absolute;
+    right: 0;
+    transform: translateX(-10%);
+    bottom: 10%;
+}
+
+.footer{
+    background-color: #000;
+    color: white;
+}
+
+.footer .container{
+    padding: 20px;
+}
+
+.footer .container ul{
+    list-style: none;
+    padding-left: 0;
+    font-size: large;
+}
+
+.f-links{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.f-row1 ,.f-row2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.f-head{
+    font-size: large;
+    margin-bottom: 1em;
+    width: fit-content;
+    border-bottom: 2px solid #fff;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon i{
+    margin: 2px 5px;
+    cursor: pointer;
+}
+
+.last{
+    font-size: 12px;
+    padding: 0;
+    gap: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.last .col-4 .col{
+    margin: 0 1px;
+    display: inline;
+    padding-right: 5px;
+}
