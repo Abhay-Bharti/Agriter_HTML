@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/Login.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="#">Logo</a>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Trips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="background">
+        <div class="container d-flex  text-white flex-md-row flex-column align-items-center">
+            <div class="background-left ps-3 pe-3">
+                <h1>Welcome to world of <span>Agriculture</span> </h1>
+                <h2>Agriter</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, sunt voluptate delectus rerum perspiciatis excepturi quia obcaecati tempore corporis ut nam sequi eos dignissimos ducimus dicta laudantium animi. Exercitationem, est!</p>
+                <a href="../index.html"  class="btn btn-warning">Head to Homepage</a>
+            </div>
+            <div class="background-right">
+                <form action="../index.html">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" 
+                            aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                        <label class="form-check-label" for="exampleCheck1" >I Agree to Terms & Conditions.</label>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-between">
+                        <button type="submit" class="btn btn-success submit">Submit</button>
+                        <div class="form-text">Or</div>
+                        <button class="btn btn-primary SignUp ">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer text-white">
+        <div class="container pt-3 ps-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="f-head">ABOUT US</div>
+                    <div class="f-body">
+                        <ul>
+                            <li>Management</li>
+                            <li>Terms of Services</li>
+                            <li>User Agreement</li>
+                            <li>Privacy</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="f-head">TRAVEL DETAILS</div>
+                    <div class="f-body">
+                        <ul>
+                            <li>PNR Status</li>
+                            <li>Offers</li>
+                            <li>Airline Routes</li>
+                            <li>Train Running Status</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="f-head">OUR PRODUCTS</div>
+                    <div class="f-body">
+                        <ul>
+                            <li>Domestic Hotels</li>
+                            <li>International Hotels</li>
+                            <li>Domestic Flights</li>
+                            <li>International Flights</li>
+                            <li>Multi-City Flights</li>
+                            <li>Nearby Getaways</li>
+                            <li>Bus Booking</li>
+                            <li>Cab Booking</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="f-head">MORE LINKS</div>
+                    <div class="f-body">
+                        <ul>
+                            <li>Cheap Flights</li>
+                            <li>Hotels Near Me</li>
+                            <li>My Bookings</li>
+                            <li>Cancellation</li>
+                            <li>My Account</li>
+                            <li>Wallet</li>
+                            <li>Advertise with Us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="container">
+            <div class="follow-head">
+                <h5>Follow Us</h5>
+            </div>
+            <div class="icon">
+                <div class="icons">
+                    <i class="fab fa-instagram fa-2x" style="color: #ffffff;"></i>
+                    <i class="fab fa-twitter-square fa-2x" style="color: #ffffff;"></i>
+                    <i class="fab fa-youtube fa-2x" style="color: #ffffff;"></i>
+                    <i class="fab fa-facebook fa-2x" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container pb-3">
+            <div class="last row">
+                <div class="col-4">
+                    <div class="col" style="border-right: 1px solid #fff;">Privacy Policy</div>
+                    <div class="col" style="border-right: 1px solid #fff;">Terms & Conditions</div>
+                    <div class="col">FAQ</div>
+                </div>
+                <div class="col text-center"><img src="" alt="logo"></div>
+                <div class="col text-end">Copyright&nbsp;&copy;2024&nbsp;Agriter. All rights reserved.</div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../script/Login.js"></script>
+</body>
+</html>

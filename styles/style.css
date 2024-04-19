@@ -90,16 +90,6 @@
     .achieve .left i{
         font-size: 10vw;
     }
-
-    .f-links{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .f-row1, .f-row2{
-        width: 100%;
-    }
-
 }
 
 .background {
@@ -265,28 +255,13 @@
     color: white;
 }
 
-.footer .container{
-    padding: 20px;
-}
-
 .footer .container ul{
     list-style: none;
     padding-left: 0;
     font-size: large;
 }
 
-.f-links{
-    display: flex;
-    justify-content: space-between;
-   
-}
-
-.f-row1 ,.f-row2{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
+.footer .row
 .f-head{
     font-size: large;
     margin-bottom: 1em;
