@@ -8,7 +8,6 @@ $(document).ready(function () {
         setTimeout(function () {
             $('.background-right form').html(formHTML).show(1000);
         }, 2000);
-    });
 
-    
+    });
 });

@@ -28,18 +28,22 @@
 }
 
 .background-right {
-    background-color: lightgreen;
+    background-color: rgba(255, 255, 255 , 0.2);
     min-width: 30vw;
     color: black;
     border-radius: 20px;
     padding: 2em;
 }
 
+.form-text{
+    color: #fff;
+}
+
 @media (max-width: 576px) {
     .background{
-        height: 140vh;
-    }  
-    
+        height: 103vh;
+    }
+
     .background-right{
         margin-top: 2em;
         width: 90%;
