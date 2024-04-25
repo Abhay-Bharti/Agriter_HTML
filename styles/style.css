@@ -1,5 +1,8 @@
-.navbar .container{
-    background-color: #fff;
+.navbar{
+    transition: all 0.5s;
+}
+
+.navbar .container {
     height: 70px;
     margin: 20px;
     border-radius: 16px;
@@ -26,14 +29,23 @@
 }
 
 .nav-link {
-    color: #666777;
-    font-weight: 500;
+    color: #fff;
+    font-weight: 600;
     position: relative;
 }
 
 .nav-link:hover,
 .nav-link:active {
-    color: #000;
+    color: #80ff95;
+}
+
+.bg-change{
+    background-color: green;
+}
+
+.navbar-scrolled{
+    background-color: #248672;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 991px) {
@@ -49,7 +61,7 @@
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: darkolivegreen;
+        background-color: #80ff95;
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
@@ -67,11 +79,11 @@
         display: none;
     }
 
-    .navbar{ 
+    .navbar {
         padding-left: 10px;
         padding-right: 10px;
     }
-    
+
     .tele .box {
         padding: 3px;
         margin: 0 auto;
@@ -79,28 +91,28 @@
         flex-direction: column;
     }
 
-    .tele .box img{
+    .tele .box img {
         max-width: 120vw;
     }
 
-    .sign-up .container .form{
+    .sign-up .container .form {
         width: 90vw;
     }
 
-    .achieve .left i{
+    .achieve .left i {
         font-size: 10vw;
     }
 }
 
 .background {
-    background: url(bg.jpg) no-repeat center;
+    background: url(https://plus.unsplash.com/premium_photo-1661962692059-55d5a4319814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGFncmljdWx0dXJlfGVufDB8MHwwfHx8MA%3D%3D) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
 
-.background::before{
-    background-color: rgba(0,0,0,0.4);
+.background::before {
+    background-color: rgba(0, 0, 0, 0.4);
     content: "";
     position: absolute;
     top: 0;
@@ -110,18 +122,27 @@
     height: 100vh;
 }
 
-.background .container{
+.background .container {
     height: 100vh;
     z-index: 1;
     position: relative;
 }
 
-.background h1{
-    font-size: 1.5em;
+.main-head{
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 900;
 }
 
-.background h2{
-    font-size: 1.2em;
+.main-head span{
+    font-size: 2.5em;
+}
+
+.main-intro{
+    padding: 2em 6em;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
 }
 
 .view {
@@ -134,32 +155,37 @@
     background-color: orange;
 }
 
-.view:hover{
-    box-shadow: 2px  4px 4px black;
+.view:hover {
+    background-color: rgba(255, 166, 0, 0.819);
+    box-shadow: 2px 2px 2px black;
 }
 
-.tele .box{
+.view:active{
+    background-color: rgba(255, 166, 0, 0.819);
+}
+
+.tele .box {
     background-color: rgb(0, 213, 255);
     display: flex;
     padding: 3vh 2vw 2vw 3vh;
     margin: 10vh 0 15vh;
 }
 
-.tele .box img{
-    margin: 10px ;
+.tele .box img {
+    margin: 10px;
 }
 
-.content{
+.content {
     padding-top: 1rem;
     padding-left: 2rem;
 }
 
-.achieve{
+.achieve {
     margin-top: 10px;
     width: 80%;
 }
 
-.achieve .col-6{
+.achieve .col-6 {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -169,57 +195,62 @@
     font-size: 3vw;
 }
 
-.activity{
+.activity {
     background-color: beige;
     margin-bottom: 10vh;
 }
 
-.activity .row{
+.activity .row {
     padding: 2vh;
     gap: 1vmax;
 }
 
-.activity .row .col-md{
+.activity .row .col-md {
     background-color: #fff;
     height: 25vh;
 }
 
-.activity .row .col-md div img{
+.activity .row .col-md div img {
     height: 80%;
     width: 70%;
 }
 
-.sign-up{
-    background: url(https://plus.unsplash.com/premium_photo-1673603988651-99f79e4ae7d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D);
+.sign-up {
+    background: url(https://media.istockphoto.com/id/532005803/photo/paddy-of-rice-back-ground-in-farm-thailand.webp?b=1&s=170667a&w=0&k=20&c=tuu7J7yoVjSUEmubcEGuxoUQfI-CT_R2BDb4CnkQ1_k=);
     background-size: cover;
     width: 100%;
     height: 50vh;
 }
 
-.sign-up .container{
+.sign-up .bg {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sign-up .container {
     height: 50vh;
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 
-.sign-up h1{
+.sign-up h1 {
     font-size: 1.5em;
 }
 
-.sign-up h2{
+.sign-up h2 {
     font-size: 1.2em;
 }
 
-.form{
+.form {
     width: 50vw;
 }
-.wrapper{
+
+.wrapper {
     position: relative;
     width: 90%;
 }
 
-.wrapper input{
-    background: rgba(255,255,255,0.3);
+.wrapper input {
+    background: rgba(255, 255, 255, 0.3);
     border: 2px solid #fff;
     border-radius: 5px;
     padding: 1rem 2rem;
@@ -227,16 +258,16 @@
     columns: #fff;
 }
 
-.wrapper input::placeholder{
+.wrapper input::placeholder {
     color: #fff;
 }
 
-.wrapper input{
+.wrapper input {
     outline: none;
     box-shadow: none;
 }
 
-.wrapper button{
+.wrapper button {
     background-color: lightcoral;
     color: white;
     border: none;
@@ -250,37 +281,36 @@
     bottom: 10%;
 }
 
-.footer{
-    background-color: #000;
+.footer {
+    background-color: #248672;
     color: white;
 }
 
-.footer .container ul{
+.footer .container ul {
     list-style: none;
     padding-left: 0;
     font-size: large;
 }
 
-.footer .row
-.f-head{
+.footer .row .f-head {
     font-size: large;
     margin-bottom: 1em;
     width: fit-content;
     border-bottom: 2px solid #fff;
 }
 
-.icon{
+.icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.icon i{
+.icon i {
     margin: 2px 5px;
     cursor: pointer;
 }
 
-.last{
+.last {
     font-size: 12px;
     padding: 0;
     gap: 0;
@@ -288,7 +318,7 @@
     justify-content: space-between;
 }
 
-.last .col-4 .col{
+.last .col-4 .col {
     margin: 0 1px;
     display: inline;
     padding-right: 5px;

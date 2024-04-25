@@ -1,0 +1,187 @@
+
+.packages {
+    width: 100%;
+    height: 70vh;
+}
+
+.packages::before {
+    background-color: rgba(0, 0, 0, 0.4);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 70vh;
+}
+
+.packages .container {
+    height: 70vh;
+    z-index: 1;
+    position: relative;
+}
+
+.carousel-item{
+    height: 70vh;
+    width: 100%;
+}
+
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.offers{
+    margin: 4em 0;
+}
+
+.offers .container{
+    padding: 2em;
+    height: max-content;
+}
+
+.ltg{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2em;
+}
+
+.ltg .columns{
+    width: 19vw;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.1);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 7px 2px rgba(0,0,0,0.2);
+}
+
+.p-img{
+    height: 50%;
+    width: 95%;
+}
+
+.columns img{
+    height: 100%;
+    width: 100%;
+}
+
+.p-info{
+    margin: 7px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.list .columns {
+    width: 95%;
+    height: 30vh;
+    margin-top: 10px;
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.list .p-img{
+    width: 30%;
+    height: 95%;
+    margin: 4px 10px;
+}
+
+.list .p-info{
+    padding-right: 20px;
+    width: 60%;
+}
+
+.partner-logo{
+    height: 10vmax;
+    width: 10vmax;
+}
+
+.partner-logo img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:576px) {
+
+    .packages{
+        height: 40vh;
+    }
+
+    .packages::before{
+        height: 40vh;
+    }
+
+    .carousel-item{
+        height: 40vh;
+    }
+
+    .ltg{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .offers .container{
+        padding: 2em 0;
+    }
+
+    .offer-head{
+        margin: 0 1em;
+    }
+
+    .ltg .columns{
+        width: 95%;
+        height: 28vh;
+        font-size: small;
+        background-color: #fff;
+        margin: 5px 0;
+        box-shadow: 3px 3px 2px rgba(0,0,0,0.2);
+    }
+
+    h1{
+        font-size: large;
+    }
+
+    .p-img{
+        height: 40%;
+        margin-top: 8px;
+    }
+
+    .list {
+        grid-template-columns: 1fr;
+    }
+
+    .list .columns{
+        width: 100%;
+        height: 15vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding-right: 10px;
+    }
+
+    .list .p-img{
+        width: 40%;
+        height: 90%;
+    }
+    
+    .offers .container{
+        border-radius: 0;
+    }
+
+    .partners .container{
+        padding: 5px 30px;
+    }
+
+    .partners{
+        margin-bottom: 2em;
+    }
+}

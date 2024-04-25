@@ -1,0 +1,70 @@
+
+.background {
+    height: 50vh;
+}
+
+.background::before{
+    height: 50vh;
+}
+
+.background .container{
+    height: 50vh;
+}
+
+.slide{
+    margin: 2em 0 2em 0;
+}
+
+.c-item{
+    height: 70vh;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.gallery .row img{
+    width: 95%;
+    height: 90%;
+}
+
+.gallery {
+    margin: 2em auto;
+    
+}
+
+.gallery .container{
+    border: 2px solid rgba(0,0,0,0.3);
+    padding: 1em;
+    border-radius: 2em;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2) ;
+}
+
+@media (min-width:575px) {
+    .gallery .row:nth-child(2) img{
+    height: 40vh;
+    width: 98%;
+    object-fit: cover;
+}
+}
+
+@media screen and (max-width:576px){
+    .c-item{
+        height: 30vh;
+    }
+
+    
+}
+
+@media (max-width:991px) {
+    .gallery .row img{
+        width: 100%;
+        height: 95%;
+    }
+
+    .gallery .row:nth-child(2) .col-4{
+        padding-right: 0;
+    }    
+}

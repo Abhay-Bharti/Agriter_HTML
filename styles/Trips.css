@@ -1,0 +1,138 @@
+.Destination-form {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  min-width: 30vw;
+  color: black;
+  border-radius: 20px;
+  padding: 2em;
+}
+
+.Trip-header {
+  width: 40%;
+}
+
+@media (max-width:576px) {
+
+  .Destination-form,
+  .Trip-header {
+    width: 90%;
+  }
+
+  .background .container{
+    top: 4em;
+  }
+
+  .background{
+    height: 110vh;
+  }
+
+  .background::before{
+    height: inherit;
+  }
+
+  .topDest .container{
+    width: 100%;
+    margin: 3em 0;
+  }
+
+  .topDest .img-1{
+    height: 10vh;
+  }
+}
+
+
+
+.topDest .container{
+  margin: 8em auto;
+}
+
+.topDest .img-1{
+  height: 60vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.topDest .img-2{
+  width: 100%;
+  height: 29.5vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.topDest img{
+  height: 95%;
+  width: 95%;
+  object-fit: cover;
+}
+
+.topDest .img-2 img{
+  width: 100%;
+}
+
+.background
+.Destinations{
+  margin: 4em 0 4em 0;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.Destinations .container{
+  border-radius: 2em;
+  background-color: #fff;
+  padding: 2em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 25%;
+    display: block;
+  }
+
+  .carousel-inner {
+    display: flex;
+  }
+}
+
+.card .img-wrapper {
+  max-width: 100%;
+  height: 13em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  max-height: 100%;
+}
+
+.guide{
+  margin: 8em 0;
+}
+.guide .col-6{
+  height: 25vh;
+  width: 15vw;
+
+}
+
+.guide .col-6 img{
+  height: 100%;
+  width: 100%;
+}

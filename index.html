@@ -25,19 +25,20 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">About</a>
+                            <a class="nav-link mx-lg-2" href="./components/about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Services</a>
+                            <a class="nav-link mx-lg-2" href="./components/Trips.html">Trips</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Trips</a>
+                            <a class="nav-link mx-lg-2" href="./components/packages.html">Packages</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="contactus.html">Contact Us</a>
+                            <a class="nav-link mx-lg-2" href="./components/contactUs.html">Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2 login-button-hide" href="components/Login.html">Login</a>
@@ -45,7 +46,7 @@
                     </ul>
                 </div>
             </div>
-            <a href="components/Login.html" class="btn btn-success Login-Button">Login</a>
+            <a href="components/Login.html" class="btn btn-outline-light Login-Button">Login</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -54,13 +55,15 @@
     </nav>
 
     <section class="background">
-        <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
-            <h1>Welcome to world of <span>Agriculture</span> </h1>
-            <h2>Agriter</h2>
+        <div class="container d-flex align-items-center justify-content-center text-white flex-column">
+            <h1 class="text-center main-head"><span>Agriter </span><br>Gateway to Agri-Tourism Adventures </h1>
+            <p class="main-intro">Welcome to Agriter, your digital doorway to the enchanting world of agri-tourism. Dive into a cornucopia of experiences, from farm stays to vineyard tours, where you can immerse yourself in the rhythms of rural life and savor the authentic flavors of the countryside. Join us as we cultivate connections between travelers and the agricultural wonders that abound.</p>
+            <a href="#packages" class="btn btn-success">CONTINUE READING</a>
         </div>
+
     </section>
 
-    <section class="packages">
+    <section class="packages" id="packages">
         <div class="container">
             <div class="row first mt-5 mb-3 text-center">
                 <div class="red-heading">EXPLORE GREAT PLACES</div>
@@ -72,43 +75,56 @@
             <div class="row mb-3 ps-3 pe-3">
                 <div class="col-md-4">
                     <div class="card mb-3">
-
-                        <img src="https://images.unsplash.com/photo-1566679056469-16061a39232a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFncmljdWx0dXJlJTIwZmllbGQlMjByYXRpbyUyMDMlM0E0fGVufDB8fDB8fHww"
+                        <img src="resources/tea-garden.avif"
                             class="card-img-top" alt="Crop">
                         <div class="card-body">
-                            <h5 class="card-title">Sunset view of beautiful lakeside resident</h5>
-                            <p class="card-text">&#40;25 reviews&#41;&nbsp;&nbsp;<i class="fa fa-solid fa-star "></i><i
-                                    class="fa fa-solid fa-star"></i><i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class=" fa fa-solid fa-star"></i><i
+                            <h5 class="card-title">The Rich Heritage of Tea Gardens</h5>
+                            <p class="card-text">&#40;125 reviews&#41;&nbsp;&nbsp;<i class="fa-solid fa-star"
+                                style="color: #63E6BE;"></i><i class="fa-solid fa-star"
+                                style="color: #63E6BE;"></i><i class="fa-solid fa-star"
+                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star"
+                                    style="color: #63E6BE;"></i><i
                                     class="fa-regular fa-star" style="color: #63E6BE;"></i></p>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
+                            <p class="card-text">Tea gardens, serene and verdant, are the birthplaces of the world's favorite beverage. Explore these tranquil havens where the art of cultivation intertwines with nature's bounty, producing the leaves that steep into our daily rituals and cultural traditions</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 ">
                     <div class="card mb-3">
-                        <img src="https://images.unsplash.com/photo-1463736616789-4e585fa2a273?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGFncmljdWx0dXJlJTIwZmllbGQlMjByYXRpbyUyMDMlM0E0fGVufDB8fDB8fHww"
+                        <img src="resources/strawberry-farms.avif"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
+                            <h5 class="card-title">The Sweet Bounty of Strawberry Farms</h5>
+                            <p class="card-text">&#40;300 reviews&#41;&nbsp;&nbsp;<i class="fa-solid fa-star"
+                                style="color: #63E6BE;"></i><i class="fa-solid fa-star"
+                                style="color: #63E6BE;"></i><i class="fa-solid fa-star"
+                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star"
+                                    style="color: #63E6BE;"></i><i
+                                    class="fa-regular fa-star" style="color: #63E6BE;"></i></p>
+                            <p class="card-text">Discover the delightful allure of strawberry farms, where vibrant red berries flourish under the sun-kissed rows. From pick-your-own adventures to farm-to-table delights, these pastoral landscapes offer a taste of summer's sweetness and the joy of harvesting nature's treasures.</p>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-3">
-                        <img src="https://images.unsplash.com/photo-1588023708102-d578b324e5fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFncmljdWx0dXJlJTIwZmllbGQlMjByYXRpbyUyMDMlM0E0fGVufDB8fDB8fHww"
+                        <img src="resources/Grapes-fields.avif"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
+                            <h5 class="card-title"> Vineyards: Where Grapes Meet Majesty</h5>
+                            <p class="card-text">&#40;99 reviews&#41;&nbsp;&nbsp;<i class="fa-solid fa-star"
+                                style="color: #63E6BE;"></i><i class="fa-solid fa-star"
+                                style="color: #63E6BE;"></i><i class="fa-solid fa-star"
+                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star"
+                                    style="color: #63E6BE;"></i><i
+                                    class="fa-solid fa-star" style="color: #63E6BE;"></i></p>
+                            <p class="card-text">Embark on a journey through the sprawling beauty of vineyards, where rows of grapevines stretch towards the horizon, laden with the promise of fine wines and picturesque vistas. From the artistry of cultivation to the romance of wine tasting, vineyards encapsulate the harmony of nature and human craftsmanship.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <button class="view">VIEW ALL PACKAGES</button>
+                <a href="components/packages.html" class="btn view">VIEW ALL PACKAGES</a>
             </div>
         </div>
     </section>
@@ -127,7 +143,7 @@
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center justify-content-center">
                             <div class="d-flex flex-row justify-content-center align-items-center">
-                                <div class="left me-4"><i class="fa-solid fa-users" style="color: #ffffff;"></i></div>
+                                <div class="left me-4 "><i class="fa-solid fa-users" style="color: #ffffff;"></i></div>
                                 <div class="right">
                                     <h3>500K+</h3>
                                     <p class="sub-head">Satisfied Clients</p>
@@ -137,7 +153,7 @@
                         <div class="col-12 col-sm-6 text-center justify-content-center">
                             <div class="d-flex flex-row justify-content-center align-items-center">
                                 <div class="left me-4">
-                                    <i class="fa-solid fa-award" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-award" style="color: #fff;"></i>
                                 </div>
                                 <div class="right">
                                     <h3>250+</h3>
@@ -147,10 +163,10 @@
                         </div>
                     </div>
                     <div class="row ">
-                        <div class="col-12 col-sm-6 text-center justify-content-center ">
+                        <div class="col-12 col-sm-6 text-center justify-content-center">
                             <div class="d-flex flex-row justify-content-center align-items-center">
                                 <div class="left pe-4">
-                                    <i class="fa-solid fa-circle-user" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-circle-user" style="color: #fff;"></i>
                                 </div>
                                 <div class="right">
                                     <h3>15K+ </h3>
@@ -170,7 +186,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -238,17 +253,20 @@
     </section>
 
     <section class="sign-up">
-        <div class="container d-flex justify-content-center text-white flex-column">
-            <div class="form">
-                <p class="red-heading">HOLIDAY PACKAGE OFFER</p>
-                <h1>HOLIDAY SPECIAL OFFER 25% OFF!</h1>
-                <h5>Sign up now to recieve hot special offers and information about the latest tour packages, updates
-                    and discounts.</h5>
+        <div class="bg">
+            <div class="container d-flex justify-content-center text-white flex-column">
+                <div class="form">
+                    <p class="red-heading">HOLIDAY PACKAGE OFFER</p>
+                    <h1>HOLIDAY SPECIAL OFFER 25% OFF!</h1>
+                    <h5>Sign up now to recieve hot special offers and information about the latest tour packages,
+                        updates
+                        and discounts.</h5>
 
-                <div class="wrapper">
-                    <label for="email"></label>
-                    <input type="text" placeholder="Your Email Address">
-                    <button href="login.html">Sign Up Now</button>
+                    <div class="wrapper">
+                        <label for="email"></label>
+                        <input type="text" placeholder="Your Email Address">
+                        <button href="login.html">Sign Up Now</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -313,10 +331,11 @@
             </div>
         </div>
         <hr>
-        
-        <div class="container"><div class="follow-head">
-            <h5>Follow Us</h5>
-        </div>
+
+        <div class="container">
+            <div class="follow-head">
+                <h5>Follow Us</h5>
+            </div>
             <div class="icon">
                 <div class="icons">
                     <i class="fab fa-instagram fa-2x" style="color: #ffffff;"></i>
@@ -345,6 +364,6 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script/script.js"></script>
+    <script src="script/index.js"></script>
 </body>
 </html>
