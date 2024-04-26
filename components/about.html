@@ -6,7 +6,7 @@
     <title>About Us</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,12 +17,16 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand me-auto" href="#">Logo</a>
+            <a class="navbar-brand me-auto" href="#"><div class="logo">
+                <img src="../resources/logo.png" alt="logo">
+            </div></a>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><div class="logo">
+                        <img src="../resources/logo.png" alt="logo">
+                    </div></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -31,7 +35,7 @@
                             <a class="nav-link mx-lg-2" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active mx-lg-2" href="./about.html">About</a>
+                            <a class="nav-link active mx-lg-2 text-warning fw-bolder" href="./about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="../components/packages.html">Packages</a>
@@ -42,6 +46,8 @@
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="./contactUs.html">Contact Us</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 login-button-hide" href="../components/Login.html">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -62,17 +68,29 @@
 
     <section class="intro">
         <p class="red-heading"></p>
-        <div class="container">
+        <div class="container rounded">
             <div class="row">
                 <div class="col-sm-5 ">
-                    <h3>HELLO, OUR AGENCY HAS BEEN PRESENT BEST IN THE MARKET</h3>
+                    <h1 class="display-2">HELLO, OUR AGENCY HAS BEEN PRESENT BEST IN THE MARKET</h1>
                 </div>
                 <div class="col-sm-7 ">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, aut suscipit? Dolorem fuga
-                        delectus ratione ducimus autem officiis quaerat voluptatem rerum alias tenetur reprehenderit
-                        magni dolore, qui ipsam quibusdam est excepturi consequuntur iusto illo repudiandae libero odio
-                        neque voluptatum numquam? Aliquid accusantium sit culpa assumenda! Temporibus commodi porro quae
-                        animi!</p>
+                    <p>At Agriter, we're dedicated to showcasing the charm and allure of agritourism. Our mission is to
+                        bridge the gap between urban dwellers and rural landscapes, offering immersive experiences that
+                        celebrate local culture, sustainable practices, and the natural world. With a commitment to
+                        authenticity and community, we invite you to embark on unforgettable journeys that foster
+                        connections, create memories, and inspire a deeper appreciation for the beauty and bounty of our
+                        agricultural heritage. Join us as we explore the rich tapestry of rural life and cultivate
+                        meaningful connections between travelers and the land.</p>
+                    <p>
+                        Agriter stands at the intersection of adventure and education, offering an array of experiences
+                        that not only entertain but also enlighten. Through farm tours, workshops, and hands-on
+                        activities, we provide a deeper understanding of agricultural practices, fostering appreciation
+                        for the land and its bounty. Our network of partners, including local farmers, artisans, and
+                        conservationists, ensures that each journey is infused with authenticity and purpose. With a
+                        commitment to responsible tourism, we strive to leave a positive impact on the communities we
+                        visit while creating lifelong memories for our guests. Join us in discovering the beauty and
+                        significance of rural life, one adventure at a time.
+                    </p>
                 </div>
             </div>
         </div>
@@ -80,7 +98,8 @@
 
     <section class="slide">
         <div class="container">
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-interval="3000">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -88,31 +107,31 @@
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active c-item">
-                        <img src="https://images.unsplash.com/photo-1594771804886-a933bb2d609b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFncmljdWx0dXJlfGVufDB8fDB8fHww"
-                            class="d-block w-100 c-img" alt="">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                        <img src="../resources/slide-1.jpg"
+                            class="d-block w-100 c-img" alt="slide">
                     </div>
                     <div class="carousel-item c-item">
-                        <img src="https://images.unsplash.com/photo-1594771804886-a933bb2d609b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFncmljdWx0dXJlfGVufDB8fDB8fHww"
-                            class="d-block w-100 c-img" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
+                        <img src="../resources/slide-2.jpg"
+                            class="d-block w-100 c-img" alt="slide">
                     </div>
                     <div class="carousel-item c-item">
-                        <img src="https://images.unsplash.com/photo-1620200423727-8127f75d7f53?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGFncmljdWx0dXJlfGVufDB8fDB8fHww"
-                            class="d-block w-100 c-img" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
+                        <img src="../resources/slide-3.jpg"
+                            class="d-block w-100 c-img" alt="slide">
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img src="../resources/slide-4.jpg"
+                            class="d-block w-100 c-img" alt="slide">
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img src="../resources/slide-5.jpg"
+                            class="d-block w-100 c-img" alt="slide">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -128,10 +147,21 @@
             </div>
     </section>
 
-    <section class="content">
+    <section class="about-content">
+        <h1 class="text-center pb-3" style="color: #009E60;">Enhancing User Experiences</h1>
         <div class="container">
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatem quisquam necessitatibus dolorum deleniti quo repellendus modi cum architecto vero, labore totam? Ipsam unde veniam fugiat animi autem esse hic enim numquam, voluptates reiciendis aliquid consequatur tempora voluptatem, non dolores architecto odit voluptatum sit ipsum laboriosam placeat, harum voluptatibus. Sint?</p>
+                At Agriter, we prioritize delivering an exceptional user experience from the moment you visit our
+                website to the conclusion of your agritourism adventure. Our user-friendly platform offers intuitive
+                navigation, allowing you to seamlessly browse through our diverse range of packages and destinations. We
+                understand that every traveler is unique, which is why we offer personalized recommendations based on
+                your preferences and interests. Once you book your experience with us, our dedicated team ensures smooth
+                coordination and support throughout your journey, from accommodation arrangements to activity bookings.
+                During your agritourism adventure, we strive to exceed your expectations by providing knowledgeable
+                guides, immersive activities, and opportunities for authentic cultural exchange. We value your feedback
+                and continuously strive to improve our services, ensuring that each user leaves with not only
+                unforgettable memories but also a deep appreciation for rural life and sustainable tourism. Join us for
+                a journey of discovery, connection, and unparalleled experiences in the heart of the countryside.</p>
         </div>
     </section>
 
@@ -140,27 +170,31 @@
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <p class="red-heading"></p>
-                    <h1>BEST TRAVELLER'S <br> SHARED PHOTOS</h1>
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae reiciendis tempora blanditiis maxime est quasi ut obcaecati accusantium amet ea.</h5>
+                    <h1 class="display-3">User-Captured Wonders:</h1>
+                    <h5> Highlighting the Best Traveler Shared Photos</h5>
                 </div>
                 <div class="col-6 pe-0 col-lg-4">
-                    <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsbGVyfGVufDB8fDB8fHww" class="d-flex justify-content-center" alt="">
+                    <img src="../resources/gallery-1.avif"
+                        class="d-flex justify-content-center rounded" alt="gallery">
                 </div>
                 <div class="col-6 col-lg-4">
-                    <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsbGVyfGVufDB8fDB8fHww" class="d-flex justify-content-center" alt="">
+                    <img src="../resources/gallery-2.webp"
+                        class="d-flex justify-content-center rounded" alt="gallery">
                 </div>
             </div>
             <div class="row">
                 <div class="col-4">
-                    <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsbGVyfGVufDB8fDB8fHww" class="d-flex justify-content-center" alt="">
+                    <img src="../resources/gallery-3.jpg"
+                        class="d-flex justify-content-center rounded" alt="gallery">
                 </div>
                 <div class="col-8">
-                    <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsbGVyfGVufDB8fDB8fHww" class="d-flex justify-content-center" alt="">
+                    <img src="../resources/gallery-4.jpg"
+                        class="d-flex justify-content-center rounded" alt="gallery">
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section class="footer text-white">
         <div class="container pt-3 ps-4">
             <div class="row">
@@ -242,7 +276,7 @@
                     <div class="col" style="border-right: 1px solid #fff;">Terms & Conditions</div>
                     <div class="col">FAQ</div>
                 </div>
-                <div class="col text-center"><img src="" alt="logo"></div>
+                <div class="col text-center"></div>
                 <div class="col text-end">Copyright&nbsp;&copy;2024&nbsp;Agriter. All rights reserved.</div>
             </div>
         </div>

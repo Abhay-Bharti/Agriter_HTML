@@ -7,6 +7,13 @@ $(document).ready(function () {
         }
     });
 
+    var windowWidth = $(window).width();
+    if (windowWidth <= 576) {
+      $('.offcanvas').addClass('bg-change');
+    } else {
+      $('.offcanvas').removeClass('bg-change');
+    }
+    
     $('#list-btn').click(function () {
         $('.ltg').addClass("list");
     });

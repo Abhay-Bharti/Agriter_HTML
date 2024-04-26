@@ -1,11 +1,10 @@
-
 .packages {
     width: 100%;
     height: 70vh;
 }
 
 .packages::before {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     content: "";
     position: absolute;
     top: 0;
@@ -21,57 +20,62 @@
     position: relative;
 }
 
-.carousel-item{
+.carousel-item {
     height: 70vh;
     width: 100%;
 }
 
-.carousel-item img{
+.carousel-item img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.offers{
+.offers {
     margin: 4em 0;
 }
 
-.offers .container{
+.offers .container {
     padding: 2em;
     height: max-content;
 }
 
-.ltg{
+.ltg {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 2em;
 }
 
-.ltg .columns{
+.ltg .columns {
     width: 19vw;
-    height: 50vh;
+    height: 55vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 5px 7px 2px rgba(0,0,0,0.2);
+    box-shadow: 5px 7px 2px rgba(0, 0, 0, 0.2);
 }
 
-.p-img{
+.p-img {
     height: 50%;
     width: 95%;
 }
 
-.columns img{
+.columns img {
     height: 100%;
     width: 100%;
 }
 
-.p-info{
+.p-info {
     margin: 7px;
+    font-size: small;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 20vh;
 }
 
 .list {
@@ -84,72 +88,65 @@
     width: 95%;
     height: 30vh;
     margin-top: 10px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
 }
 
-.list .p-img{
+.list .p-img {
     width: 30%;
     height: 95%;
     margin: 4px 10px;
 }
 
-.list .p-info{
+.list .p-info {
     padding-right: 20px;
     width: 60%;
-}
-
-.partner-logo{
-    height: 10vmax;
-    width: 10vmax;
-}
-
-.partner-logo img{
-    height: 100%;
-    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 @media screen and (max-width:576px) {
 
-    .packages{
+    .packages {
         height: 40vh;
     }
 
-    .packages::before{
+    .packages::before {
         height: 40vh;
     }
 
-    .carousel-item{
+    .carousel-item {
         height: 40vh;
     }
 
-    .ltg{
+    .ltg {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .offers .container{
+    .offers .container {
         padding: 2em 0;
     }
 
-    .offer-head{
+    .offer-head {
         margin: 0 1em;
     }
 
-    .ltg .columns{
+    .ltg .columns {
         width: 95%;
         height: 28vh;
         font-size: small;
         background-color: #fff;
         margin: 5px 0;
-        box-shadow: 3px 3px 2px rgba(0,0,0,0.2);
+        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
     }
 
-    h1{
+    h1 {
         font-size: large;
     }
 
-    .p-img{
+    .p-img {
         height: 40%;
         margin-top: 8px;
     }
@@ -158,7 +155,7 @@
         grid-template-columns: 1fr;
     }
 
-    .list .columns{
+    .list .columns {
         width: 100%;
         height: 15vh;
         flex-direction: column;
@@ -168,20 +165,19 @@
         padding-right: 10px;
     }
 
-    .list .p-img{
+    .list .p-img {
         width: 40%;
         height: 90%;
     }
-    
-    .offers .container{
+
+    .offers .container {
         border-radius: 0;
     }
 
-    .partners .container{
-        padding: 5px 30px;
-    }
-
-    .partners{
-        margin-bottom: 2em;
+    .p-info {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        height: 13vh;
     }
 }

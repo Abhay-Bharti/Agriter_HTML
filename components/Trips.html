@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Trips</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -17,12 +17,16 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand me-auto" href="#">Logo</a>
+            <a class="navbar-brand me-auto" href="#"><div class="logo">
+                <img src="../resources/logo.png" alt="logo">
+            </div></a>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><div class="logo">
+                        <img src="../resources/logo.png" alt="logo">
+                    </div></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -37,11 +41,13 @@
                             <a class="nav-link mx-lg-2" href="../components/packages.html">Packages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active mx-lg-2" href="./Trips.html">Trips</a>
+                            <a class="nav-link active mx-lg-2 text-warning fw-bolder" href="./Trips.html">Trips</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="./contactUs.html">Contact Us</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 login-button-hide" href="../components/Login.html">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -57,10 +63,11 @@
     <section class="background">
         <div class="container d-flex align-items-center justify-content-around text-white flex-sm-row flex-column">
             <div class="Trip-header">
-                <h1 class=" fs-1">Top Destination</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, sunt voluptate delectus rerum
-                    perspiciatis excepturi quia obcaecati tempore corporis ut nam sequi eos dignissimos ducimus dicta
-                    laudantium animi. Exercitationem, est!</p>
+                <h1 class=" fs-1 fw-bold">Top Destination</h1>
+                <p>Experience the epitome of travel excellence at our top-notch destinations. From breathtaking
+                    landscapes to cultural landmarks, each destination offers a unique blend of adventure and
+                    relaxation. Whether you seek vibrant city life or serene natural beauty, our handpicked destinations
+                    promise unforgettable experiences tailored to your preferences.</p>
                 <a href="../index.html" class="btn btn-warning">Head to Homepage</a>
             </div>
             <div class="Destination-form text-white">
@@ -101,44 +108,41 @@
         <div class="container">
             <div class="row mb-4">
                 <div class="col-12 col-md-6 ">
-                    <h1 class="text-center">Top Notch Destinations</h1>
+                    <h1 class="text-center display-4 fw-bolder
+                    ">Top Notch Destinations</h1>
                 </div>
                 <div class="col-12 col-md-6">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ratione blanditiis porro beatae
-                        nulla odit. Cupiditate, possimus nemo beatae similique accusantium dignissimos delectus iure.
+                        Discover unparalleled destinations that define excellence in travel. From awe-inspiring vistas
+                        to cultural marvels, each locale promises a blend of adventure and tranquility. Whether craving
+                        urban vibrancy or natural serenity, our curated destinations offer bespoke experiences tailored
+                        to your desires. Embark on a journey where every moment transcends expectation.
                     </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-6 col-md-4 pe-0">
                     <div class="img-1 d-flex justify-content-center align-items-center">
-                        <img src="https://images.unsplash.com/photo-1514632595-4944383f2737?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D"
-                            alt="Destination">
+                        <img src="../resources/trip-1.jpg" alt="Destination">
                     </div>
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="img-1 d-flex justify-content-center align-items-center">
-                        <img src="https://images.unsplash.com/photo-1514632595-4944383f2737?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D"
-                            alt="Destination">
+                        <img src="../resources/trip-2.jpg" alt="Destination">
                     </div>
                 </div>
                 <div class="col-12 col-md-4 d-flex flex-column justify-content-between ps-0">
                     <div class="row ms-0 me-0 ps-0 pe-0">
                         <div class="img-2 d-flex justify-content-center align-items-center w-100">
-                            <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D"
-                                alt="Destination">
+                            <img src="../resources/trip-3.jpg" alt="Destination">
                         </div>
                     </div>
                     <div class="row ms-0 ps-0 me-0">
                         <div class="img-2 d-flex justify-content-center align-items-center">
-                            <img src="https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdlYXRoZXJ8ZW58MHx8MHx8fDA%3D"
-                                alt="Destination">
+                            <img src="../resources/trip-4.jpg" alt="Destination">
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
@@ -150,144 +154,57 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="card">
-                            <div class="img-wrapper"><img
-                                    src="https://images.unsplash.com/photo-1610552050890-fe99536c2615?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww"
-                                    class="d-block w-100" alt="..."> </div>
+                            <div class="img-wrapper"><img src="../resources/collection-1.jpg" class="d-block w-100"
+                                    alt="..."> </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title 1</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card's content.</p>
+                                <h5 class="card-title">Orange Farms, Nagpur</h5>
+                                <p class="card-text">Dive into the citrus-scented haven of Nagpur's orange farms, where rows of verdant trees bear the golden bounty of nature. Experience the vibrant hues and aromatic delights of these orchards, where the legacy of citrus cultivation intertwines with the region's rich agricultural heritage.</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="../resources/collection-2.jpg" class="d-block w-100"
+                                    alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Tea Hills, Darjeeling</h5>
+                                <p class="card-text">Immerse yourself in the emerald landscapes of Darjeeling's iconic tea gardens, where mist-clad hills embrace lush fields of Camellia sinensis. Experience the timeless allure of these plantations, craftsmanship, tradition, and the breathtaking beauty of the Himalayan foothills.</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="card">
-                            <div class="img-wrapper"><img
-                                    src="https://images.unsplash.com/photo-1610552050890-fe99536c2615?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww"
-                                    class="d-block w-100" alt="..."> </div>
+                            <div class="img-wrapper"><img src="../resources/collection-3.jpg" class="d-block w-100"
+                                    alt="..."> </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title 2</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Blooming House, Lucknow</h5>
+                                <p class="card-text">Delve into the verdant sanctuaries of Lucknow's greenhouses, where botanical wonders thrive under protective canopies. Experience the fusion of technology and nature as these structures nurture exotic flora. Explore the vibrant tapestry of biodiversity flourishing within these urban oases.</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="card">
-                            <div class="img-wrapper"><img
-                                    src="https://images.unsplash.com/photo-1610552050890-fe99536c2615?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww"
-                                    class="d-block w-100" alt="..."> </div>
+                            <div class="img-wrapper"><img src="../resources/collection-4.jpg" class="d-block w-100"
+                                    alt="..."> </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title 3</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Singh Farms, Jalandhar</h5>
+                                <p class="card-text"> Enter the picturesque realm of Punjab's wheat fields, where vast expanses of golden grains sway in the gentle breeze. Discover the agricultural heartland's iconic landscape, where centuries of farming tradition converge with modern techniques to yield the bounty that sustains a nation.</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="card">
-                            <div class="img-wrapper"><img
-                                    src="https://images.unsplash.com/photo-1610552050890-fe99536c2615?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww"
-                                    class="d-block w-100" alt="..."> </div>
+                            <div class="img-wrapper"><img src="../resources/collection-5.jpg" class="d-block w-100"
+                                    alt="..."> </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title 4</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img
-                                    src="https://images.unsplash.com/photo-1610552050890-fe99536c2615?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww"
-                                    class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 5</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img
-                                    src="https://images.unsplash.com/photo-1610552050890-fe99536c2615?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww"
-                                    class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 6</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img
-                                    src="https://images.unsplash.com/photo-1610552050890-fe99536c2615?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww"
-                                    class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 7</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img
-                                    src="https://images.unsplash.com/photo-1610552050890-fe99536c2615?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww"
-                                    class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 8</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img
-                                    src="https://images.unsplash.com/photo-1610552050890-fe99536c2615?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlJTIwbmF0dXJlfGVufDB8fDB8fHww"
-                                    class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 9</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Uvine's Strawberry, Shimla</h5>
+                                <p class="card-text">Journey into the charming highlands of Shimla, where lush strawberry farms paint the landscape with bursts of vibrant red. Discover the sweet allure of these picturesque plantations, where the crisp mountain air . Experience the essence of summer in every juicy bite.</p>
+                                <a href="#" class="btn btn-primary">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -316,32 +233,30 @@
                 <div class="col-12 col-sm-5">
                     <div class="row">
                         <div class="col-6 pe-1 mb-1">
-                            <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGh1bWFufGVufDB8fDB8fHww"
+                            <img src="../resources/guide-1.avif"
                                 class="rounded" alt="Guide">
                         </div>
                         <div class="col-6 ps-1 mb-1">
-                            <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGh1bWFufGVufDB8fDB8fHww"
+                            <img src="../resources/guide-2.jpg"
                                 class="rounded" alt="Guide">
                         </div>
                         <div class="col-6 pe-1 mt-1">
-                            <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGh1bWFufGVufDB8fDB8fHww"
+                            <img src="../resources/guide-3.jpg"
                                 class="rounded" alt="Guide">
                         </div>
                         <div class="col-6 ps-1 mt-1">
-                            <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGh1bWFufGVufDB8fDB8fHww"
+                            <img src="../resources/guide-4.jpg"
                                 class="rounded" alt="Guide">
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-7">
                     <div class="d-flex flex-column">
-                        <p class="red-heading">
+                        <p class="red-heading pt-5 pt-sm-0">
                             The Best Guide
                         </p>
-                        <h1>ULTIMATE GUIDE TO EPIC ADVENTURE</h1>
-                        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus architecto
-                            perspiciatis similique ipsum consequatur quasi quae sapiente aperiam, repudiandae sequi,
-                            voluptas, esse placeat?</h5>
+                        <h1 class="display-5 fw-bolder">ULTIMATE GUIDE TO EPIC ADVENTURE</h1>
+                        <h5>Dive into a comprehensive handbook that unlocks the secrets to crafting unforgettable and thrilling journeys, whether you're scaling mountain peaks, traversing dense jungles, or exploring vibrant cityscapes.</h5>
                         <p>
                         <ul>
                             <li>Clear and captivating communicator, adept at storytelling.</li>
@@ -349,7 +264,6 @@
                             <li>Builds genuine connections with travelers from diverse backgrounds.</li>
                             <li>Calm problem-solver, ensuring seamless experiences.</li>
                             <li>Resilient and adaptable, turning challenges into opportunities.</li>
-                            <li>Infuses every journey with passion and enthusiasm for exploration.</li>
                         </ul>
                         </p>
                     </div>
@@ -440,7 +354,7 @@
                     <div class="col" style="border-right: 1px solid #fff;">Terms & Conditions</div>
                     <div class="col">FAQ</div>
                 </div>
-                <div class="col text-center"><img src="" alt="logo"></div>
+                <div class="col text-center"></div>
                 <div class="col text-end">Copyright&nbsp;&copy;2024&nbsp;Agriter. All rights reserved.</div>
             </div>
         </div>

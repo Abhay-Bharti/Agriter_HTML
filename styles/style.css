@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    font-family: "Lato", sans-serif;
+}
 .navbar{
     transition: all 0.5s;
 }
@@ -8,13 +13,6 @@
     border-radius: 16px;
     padding: 0.5rem;
     margin: 0 auto;
-}
-
-.navbar-brand {
-    font-weight: 500;
-    color: darkolivegreen;
-    font-size: 24px;
-    transition: 0.3s color;
 }
 
 .navbar-toggler {
@@ -40,7 +38,7 @@
 }
 
 .bg-change{
-    background-color: green;
+    background-color: #248672;
 }
 
 .navbar-scrolled{
@@ -102,6 +100,51 @@
     .achieve .left i {
         font-size: 10vw;
     }
+
+}
+
+.logo{
+    height: 80px;
+    width: 160px;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    
+    .background .main-head{
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+    
+    .background .main-head span{
+        font-size: 3em;
+    }
+    
+    .background .main-intro{
+        padding: 20px;
+        text-align: center;
+        font-size: small;
+        font-weight: 500;
+    }
+
+    .partners .container{
+        padding: 5px 30px;
+    }
+
+    .partners{
+        margin-bottom: 2em;
+    }
+
+    .logo{
+       height: 60px; 
+       width: 120px;
+    }
+
 }
 
 .background {
@@ -143,6 +186,22 @@
     text-align: center;
     font-size: large;
     font-weight: 600;
+}
+
+.red-heading{
+    color: #cd5360;
+}
+
+.tele h1{
+    font-weight: 800;
+}
+
+.partners h1 {
+    font-weight: 500;
+}
+
+.packages h1, .partners h1{
+    color: #009E60;
 }
 
 .view {
@@ -193,26 +252,6 @@
 
 .achieve .left {
     font-size: 3vw;
-}
-
-.activity {
-    background-color: beige;
-    margin-bottom: 10vh;
-}
-
-.activity .row {
-    padding: 2vh;
-    gap: 1vmax;
-}
-
-.activity .row .col-md {
-    background-color: #fff;
-    height: 25vh;
-}
-
-.activity .row .col-md div img {
-    height: 80%;
-    width: 70%;
 }
 
 .sign-up {
@@ -281,6 +320,20 @@
     bottom: 10%;
 }
 
+.partners{
+    margin-bottom: 2em;
+}
+
+.partner-logo{
+    height: 10vmax;
+    width: 10vmax;
+}
+
+.partner-logo img{
+    height: 100%;
+    width: 100%;
+}
+
 .footer {
     background-color: #248672;
     color: white;
@@ -323,3 +376,4 @@
     display: inline;
     padding-right: 5px;
 }
+

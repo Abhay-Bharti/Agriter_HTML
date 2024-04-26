@@ -11,6 +11,24 @@
     height: 50vh;
 }
 
+.intro{
+    margin: 4em auto;
+}
+
+.intro .container{
+    border: 2px solid black;
+    padding: 1em;
+    box-shadow: 4px 4px rgba(0,0,0,0.2);
+}
+
+.display-2, .display-3{
+    color: #009E60;
+    font-weight: 600;
+}
+
+.intro p{
+    font-size: large;
+}
 .slide{
     margin: 2em 0 2em 0;
 }
@@ -24,6 +42,11 @@
     object-fit: cover;
 
 }
+
+.about-content{
+    padding: 2em 1em;
+}
+
 
 .gallery .row img{
     width: 95%;
@@ -55,6 +78,10 @@
         height: 30vh;
     }
 
+    .intro .container{
+        border: 0;
+        border-radius: 0 0 0 0 rgba(0,0,0,0);
+    }
     
 }
 

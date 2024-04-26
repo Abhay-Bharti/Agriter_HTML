@@ -37,3 +37,10 @@ $(window).scroll(function () {
       $('.navbar').removeClass('navbar-scrolled');
   }
 });
+
+var windowWidth = $(window).width();
+    if (windowWidth <= 576) {
+      $('.offcanvas').addClass('bg-change');
+    } else {
+      $('.offcanvas').removeClass('bg-change');
+    }

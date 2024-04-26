@@ -19,11 +19,11 @@
   }
 
   .background .container{
-    top: 4em;
+    top: 6em;
   }
 
   .background{
-    height: 110vh;
+    height: 135vh;
   }
 
   .background::before{
@@ -38,6 +38,11 @@
   .topDest .img-1{
     height: 10vh;
   }
+
+  .guide .row .col-6{
+    height: 20vh;
+    width: 50vw;
+  }
 }
 
 
@@ -46,6 +51,9 @@
   margin: 8em auto;
 }
 
+.topDest h1{
+  color: #009E60;
+}
 .topDest .img-1{
   height: 60vh;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -126,10 +134,18 @@
 .guide{
   margin: 8em 0;
 }
+
+.guide .container{
+  box-shadow: 2px 4px 2px 2px rgba(255, 255, 255, 0.2);
+}
+
+.guide h1{
+  color: #009E60;
+}
+
 .guide .col-6{
   height: 25vh;
   width: 15vw;
-
 }
 
 .guide .col-6 img{
