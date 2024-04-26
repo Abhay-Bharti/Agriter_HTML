@@ -76,7 +76,13 @@
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     height: 20vh;
-}
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
+  
+.p-info::-webkit-scrollbar {
+    display: none;
+  }
 
 .list {
     display: grid;
