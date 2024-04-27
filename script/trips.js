@@ -1,6 +1,4 @@
-var multipleCardCarousel = document.querySelector(
-  "#carouselExampleControls"
-);
+var multipleCardCarousel = document.querySelector("#carouselExampleControls");
 if (window.matchMedia("(min-width: 768px)").matches) {
   var carousel = new bootstrap.Carousel(multipleCardCarousel, {
     interval: false,
@@ -32,15 +30,15 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 
 $(window).scroll(function () {
   if (window.scrollY >= 40) {
-      $('.navbar').addClass('navbar-scrolled');
+    $(".navbar").addClass("navbar-scrolled");
   } else {
-      $('.navbar').removeClass('navbar-scrolled');
+    $(".navbar").removeClass("navbar-scrolled");
   }
 });
 
 var windowWidth = $(window).width();
-    if (windowWidth <= 576) {
-      $('.offcanvas').addClass('bg-change');
-    } else {
-      $('.offcanvas').removeClass('bg-change');
-    }
+if (windowWidth <= 991) {
+  $(".offcanvas").addClass("bg-change");
+} else {
+  $(".offcanvas").removeClass("bg-change");
+}

@@ -1,352 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Agriter</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand me-auto" href="#">
-                <div class="logo">
-                    <img src="./resources/logo.png" alt="logo">
-                </div>
-            </a>
+      <div class="container">
+        <a class="navbar-brand me-auto" href="#">
+          <div class="logo">
+            <img src="./resources/logo.png" alt="logo" />
+          </div>
+        </a>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><div class="logo">
-                        <img src="./resources/logo.png" alt="logo">
-                    </div></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2 active text-warning fw-bolder" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="./components/about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="./components/Trips.html">Trips</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="./components/packages.html">Packages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="./components/contactUs.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2 login-button-hide" href="components/Login.html">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <a href="components/Login.html" class="btn btn-outline-light Login-Button">Login</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <div class="logo">
+                <img src="./resources/logo.png" alt="logo" />
+              </div>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-lg-2 active text-warning fw-bolder"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="./components/about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="./components/Trips.html"
+                  >Trips</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="./components/packages.html"
+                  >Packages</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="./components/contactUs.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-lg-2 login-button-hide"
+                  href="components/Login.html"
+                  >Login/SignUp</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+        <a
+          href="components/Login.html"
+          class="btn btn-outline-light Login-Button"
+          >Login/SignUp</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
     </nav>
 
     <section class="background">
-        <div class="container d-flex align-items-center justify-content-center text-white flex-column">
-            <h1 class="text-center main-head"><span>Agriter </span><br>Gateway to Agri-Tourism Adventures </h1>
-            <p class="main-intro">Welcome to Agriter, your digital doorway to the enchanting world of agri-tourism. Dive
-                into a cornucopia of experiences, from farm stays to vineyard tours, where you can immerse yourself in
-                the rhythms of rural life and savor the authentic flavors of the countryside. Join us as we cultivate
-                connections between travelers and the agricultural wonders that abound.</p>
-            <a href="#packages" class="btn btn-success">CONTINUE READING</a>
-        </div>
-
+      <div
+        class="container d-flex align-items-center justify-content-center text-white flex-column"
+      >
+        <h1 class="text-center main-head">
+          <span>Agriter </span><br />Gateway to Agri-Tourism Adventures
+        </h1>
+        <p class="main-intro">
+          Welcome to Agriter, your digital doorway to the enchanting world of
+          agri-tourism. Dive into a cornucopia of experiences, from farm stays
+          to vineyard tours, where you can immerse yourself in the rhythms of
+          rural life and savor the authentic flavors of the countryside. Join us
+          as we cultivate connections between travelers and the agricultural
+          wonders that abound.
+        </p>
+        <a href="#packages" class="btn btn-success">CONTINUE READING</a>
+      </div>
     </section>
 
     <section class="packages" id="packages">
-        <div class="container">
-            <div class="row first mt-5 mb-3 text-center">
-                <div class="red-heading">EXPLORE GREAT PLACES</div>
-                <h1>POPULAR PACKAGES</h1>
-                <h5>
-                    Explore Our Best Picks for Unforgettable Rural Adventures
-                </h5>
-            </div>
-            <div class="row mb-3 ps-3 pe-3">
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <img src="resources/tea-garden.avif" class="card-img-top" alt="Crop">
-                        <div class="card-body">
-                            <h5 class="card-title">The Rich Heritage of Tea Gardens</h5>
-                            <p class="card-text">&#40;125 reviews&#41;&nbsp;&nbsp;<i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class="fa-regular fa-star"
-                                    style="color: #63E6BE;"></i></p>
-                            <p class="card-text">Tea gardens, serene and verdant, are the birthplaces of the world's
-                                favorite beverage. Explore these tranquil havens where the art of cultivation
-                                intertwines with nature's bounty, producing the leaves that steep into our daily rituals
-                                and cultural traditions</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ">
-                    <div class="card mb-3">
-                        <img src="resources/strawberry-farms.avif" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">The Sweet Bounty of Strawberry Farms</h5>
-                            <p class="card-text">&#40;300 reviews&#41;&nbsp;&nbsp;<i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class="fa-regular fa-star"
-                                    style="color: #63E6BE;"></i></p>
-                            <p class="card-text">Discover the delightful allure of strawberry farms, where vibrant red
-                                berries flourish under the sun-kissed rows. From pick-your-own adventures to
-                                farm-to-table delights, these pastoral landscapes offer a taste of summer's sweetness
-                                and the joy of harvesting nature's treasures.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <img src="resources/Grapes-fields.avif" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"> Vineyards: Where Grapes Meet Majesty</h5>
-                            <p class="card-text">&#40;99 reviews&#41;&nbsp;&nbsp;<i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star"
-                                    style="color: #63E6BE;"></i><i class="fa-solid fa-star" style="color: #63E6BE;"></i>
-                            </p>
-                            <p class="card-text">Embark on a journey through the sprawling beauty of vineyards, where
-                                rows of grapevines stretch towards the horizon, laden with the promise of fine wines and
-                                picturesque vistas. From the artistry of cultivation to the romance of wine tasting,
-                                vineyards encapsulate the harmony of nature and human craftsmanship.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <a href="components/packages.html" class="btn view">VIEW ALL PACKAGES</a>
-            </div>
+      <div class="container">
+        <div class="row first mt-5 mb-3 text-center">
+          <div class="red-heading">EXPLORE GREAT PLACES</div>
+          <h1>POPULAR PACKAGES</h1>
+          <h5>Explore Our Best Picks for Unforgettable Rural Adventures</h5>
         </div>
+        <div class="row mb-3 ps-3 pe-3">
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img
+                src="resources/tea-garden.avif"
+                class="card-img-top"
+                alt="Crop"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Rich Heritage of Tea Gardens</h5>
+                <p class="card-text">
+                  &#40;125 reviews&#41;&nbsp;&nbsp;<i
+                    class="fa-solid fa-star"
+                    style="color: #63e6be"
+                  ></i
+                  ><i class="fa-solid fa-star" style="color: #63e6be"></i
+                  ><i class="fa-solid fa-star" style="color: #63e6be"></i
+                  ><i class="fa-solid fa-star" style="color: #63e6be"></i
+                  ><i class="fa-regular fa-star" style="color: #63e6be"></i>
+                </p>
+                <p class="card-text">
+                  Tea gardens, serene and verdant, are the birthplaces of the
+                  world's favorite beverage. Explore these tranquil havens where
+                  the art of cultivation intertwines with nature's bounty,
+                  producing the leaves that steep into our daily rituals and
+                  cultural traditions
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img
+                src="resources/strawberry-farms.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Sweet Bounty of Strawberry Farms</h5>
+                <p class="card-text">
+                  &#40;300 reviews&#41;&nbsp;&nbsp;<i
+                    class="fa-solid fa-star"
+                    style="color: #63e6be"
+                  ></i
+                  ><i class="fa-solid fa-star" style="color: #63e6be"></i
+                  ><i class="fa-solid fa-star" style="color: #63e6be"></i
+                  ><i class="fa-solid fa-star" style="color: #63e6be"></i
+                  ><i class="fa-regular fa-star" style="color: #63e6be"></i>
+                </p>
+                <p class="card-text">
+                  Discover the delightful allure of strawberry farms, where
+                  vibrant red berries flourish under the sun-kissed rows. From
+                  pick-your-own adventures to farm-to-table delights, these
+                  pastoral landscapes offer a taste of summer's sweetness and
+                  the joy of harvesting nature's treasures.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img
+                src="resources/Grapes-fields.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vineyards: Where Grapes Meet Majesty</h5>
+                <p class="card-text">
+                  &#40;99 reviews&#41;&nbsp;&nbsp;<i
+                    class="fa-solid fa-star"
+                    style="color: #63e6be"
+                  ></i
+                  ><i class="fa-solid fa-star" style="color: #63e6be"></i
+                  ><i class="fa-solid fa-star" style="color: #63e6be"></i
+                  ><i class="fa-solid fa-star" style="color: #63e6be"></i
+                  ><i class="fa-solid fa-star" style="color: #63e6be"></i>
+                </p>
+                <p class="card-text">
+                  Embark on a journey through the sprawling beauty of vineyards,
+                  where rows of grapevines stretch towards the horizon, laden
+                  with the promise of fine wines and picturesque vistas. From
+                  the artistry of cultivation to the romance of wine tasting,
+                  vineyards encapsulate the harmony of nature and human
+                  craftsmanship.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <a href="components/packages.html" class="btn view"
+            >VIEW ALL PACKAGES</a
+          >
+        </div>
+      </div>
     </section>
 
     <section class="tele">
-        <div class="box">
-            <div class="content text-white">
-                <h5>CALLBACK FOR EVERYONE</h5>
-                <h1>GO TRAVEL. DISCOVER.</h1>
-                <h1>REMEMBER US!!</h1>
-                <p style="font-size: large;">Make Lasting Memories with Us. Travel Far and Wide, and Always Remember
-                    Your Adventures with Our Unforgettable Experiences.</p>
+      <div class="box">
+        <div class="content text-white">
+          <h5>CALLBACK FOR EVERYONE</h5>
+          <h1>GO TRAVEL. DISCOVER.</h1>
+          <h1>REMEMBER US!!</h1>
+          <p style="font-size: large">
+            Make Lasting Memories with Us. Travel Far and Wide, and Always
+            Remember Your Adventures with Our Unforgettable Experiences.
+          </p>
 
-                <div class="achieve">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 text-center justify-content-center">
-                            <div class="d-flex flex-row justify-content-center align-items-center">
-                                <div class="left me-4 "><i class="fa-solid fa-users" style="color: #ffffff;"></i></div>
-                                <div class="right">
-                                    <h3>500K+</h3>
-                                    <p class="sub-head">Satisfied Clients</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 text-center justify-content-center">
-                            <div class="d-flex flex-row justify-content-center align-items-center">
-                                <div class="left me-4">
-                                    <i class="fa-solid fa-award" style="color: #fff;"></i>
-                                </div>
-                                <div class="right">
-                                    <h3>250+</h3>
-                                    <p class="sub-head">Achieved Awards</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-12 col-sm-6 text-center justify-content-center">
-                            <div class="d-flex flex-row justify-content-center align-items-center">
-                                <div class="left pe-4">
-                                    <i class="fa-solid fa-circle-user" style="color: #fff;"></i>
-                                </div>
-                                <div class="right">
-                                    <h3>15K+ </h3>
-                                    <p class="sub-head">Active Members</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 text-center justify-content-center">
-                            <div class="d-flex flex-row justify-content-center align-items-center">
-                                <div class="left pe-4">
-                                    <i class="fa-solid fa-map" style="color: #ffffff;"></i>
-                                </div>
-                                <div class="right">
-                                    <h3>10K+ </h3>
-                                    <p class="sub-head">Tour Destination</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="achieve">
+            <div class="row">
+              <div class="col-12 col-sm-6 text-center justify-content-center">
+                <div
+                  class="d-flex flex-row justify-content-center align-items-center"
+                >
+                  <div class="left me-4">
+                    <i class="fa-solid fa-users" style="color: #ffffff"></i>
+                  </div>
+                  <div class="right">
+                    <h3>500K+</h3>
+                    <p class="sub-head">Satisfied Clients</p>
+                  </div>
                 </div>
+              </div>
+              <div class="col-12 col-sm-6 text-center justify-content-center">
+                <div
+                  class="d-flex flex-row justify-content-center align-items-center"
+                >
+                  <div class="left me-4">
+                    <i class="fa-solid fa-award" style="color: #fff"></i>
+                  </div>
+                  <div class="right">
+                    <h3>250+</h3>
+                    <p class="sub-head">Achieved Awards</p>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJlfGVufDB8fDB8fHww"
-                alt="tele">
+            <div class="row">
+              <div class="col-12 col-sm-6 text-center justify-content-center">
+                <div
+                  class="d-flex flex-row justify-content-center align-items-center"
+                >
+                  <div class="left pe-4">
+                    <i class="fa-solid fa-circle-user" style="color: #fff"></i>
+                  </div>
+                  <div class="right">
+                    <h3>15K+</h3>
+                    <p class="sub-head">Active Members</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 text-center justify-content-center">
+                <div
+                  class="d-flex flex-row justify-content-center align-items-center"
+                >
+                  <div class="left pe-4">
+                    <i class="fa-solid fa-map" style="color: #ffffff"></i>
+                  </div>
+                  <div class="right">
+                    <h3>10K+</h3>
+                    <p class="sub-head">Tour Destination</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <img
+          src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJlfGVufDB8fDB8fHww"
+          alt="tele"
+        />
+      </div>
     </section>
 
     <section class="partners">
-        <div class="container">
-            <h1 class="text-center display-4">Our Parteners</h1>
-            <h5 class="text-center">Discover the esteemed collaborators who enrich your journey with expertise and
-                hospitality, ensuring every moment is memorable and every experience exceptional.</h5>
-            <div class="d-flex align-items-center justify-content-around flex-wrap">
-                <div class="partner-logo">
-                    <img src="./resources/Partner-1.jpg" alt="Logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="./resources/Partner-2.png" alt="Logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="./resources/Partner-3.png" alt="Logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="./resources/Partner-4.jpg" alt="Logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="./resources/Partner-5.jpg" alt="Logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="./resources/Partner-6..png" alt="Logo">
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="text-center display-4">Our Parteners</h1>
+        <h5 class="text-center">
+          Discover the esteemed collaborators who enrich your journey with
+          expertise and hospitality, ensuring every moment is memorable and
+          every experience exceptional.
+        </h5>
+        <div class="d-flex align-items-center justify-content-around flex-wrap">
+          <div class="partner-logo">
+            <img src="./resources/Partner-1.jpg" alt="Logo" />
+          </div>
+          <div class="partner-logo">
+            <img src="./resources/Partner-2.png" alt="Logo" />
+          </div>
+          <div class="partner-logo">
+            <img src="./resources/Partner-3.png" alt="Logo" />
+          </div>
+          <div class="partner-logo">
+            <img src="./resources/Partner-4.jpg" alt="Logo" />
+          </div>
+          <div class="partner-logo">
+            <img src="./resources/Partner-5.jpg" alt="Logo" />
+          </div>
+          <div class="partner-logo">
+            <img src="./resources/Partner-6..png" alt="Logo" />
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="sign-up">
-        <div class="bg">
-            <div class="container d-flex justify-content-center text-white flex-column">
-                <div class="form">
-                    <p>HOLIDAY PACKAGE OFFER</p>
-                    <h1>HOLIDAY SPECIAL OFFER 25% OFF!</h1>
-                    <h5>Sign up now to recieve hot special offers and information about the latest tour packages,
-                        updates
-                        and discounts.</h5>
+      <div class="bg">
+        <div
+          class="container d-flex justify-content-center text-white flex-column"
+        >
+          <div class="form">
+            <p>HOLIDAY PACKAGE OFFER</p>
+            <h1>HOLIDAY SPECIAL OFFER 25% OFF!</h1>
+            <h5>
+              Sign up now to recieve hot special offers and information about
+              the latest tour packages, updates and discounts.
+            </h5>
 
-                    <div class="wrapper">
-                        <label for="email"></label>
-                        <input type="text" placeholder="Your Email Address">
-                        <button href="login.html">Sign Up Now</button>
-                    </div>
-                </div>
+            <div class="wrapper">
+              <label for="email"></label>
+              <input type="text" placeholder="Your Email Address" />
+              <button href="login.html">Sign Up Now</button>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="footer text-white">
-        <div class="container pt-3 ps-4">
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <div class="f-head">ABOUT US</div>
-                    <div class="f-body">
-                        <ul>
-                            <li>Management</li>
-                            <li>Terms of Services</li>
-                            <li>User Agreement</li>
-                            <li>Privacy</li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="f-head">TRAVEL DETAILS</div>
-                    <div class="f-body">
-                        <ul>
-                            <li>PNR Status</li>
-                            <li>Offers</li>
-                            <li>Airline Routes</li>
-                            <li>Train Running Status</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="f-head">OUR PRODUCTS</div>
-                    <div class="f-body">
-                        <ul>
-                            <li>Domestic Hotels</li>
-                            <li>International Hotels</li>
-                            <li>Domestic Flights</li>
-                            <li>International Flights</li>
-                            <li>Multi-City Flights</li>
-                            <li>Nearby Getaways</li>
-                            <li>Bus Booking</li>
-                            <li>Cab Booking</li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="f-head">MORE LINKS</div>
-                    <div class="f-body">
-                        <ul>
-                            <li>Cheap Flights</li>
-                            <li>Hotels Near Me</li>
-                            <li>My Bookings</li>
-                            <li>Cancellation</li>
-                            <li>My Account</li>
-                            <li>Wallet</li>
-                            <li>Advertise with Us</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container pt-3 ps-4">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <div class="f-head">ABOUT US</div>
+            <div class="f-body">
+              <ul>
+                <li>Management</li>
+                <li>Terms of Services</li>
+                <li>User Agreement</li>
+                <li>Privacy</li>
+              </ul>
             </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="f-head">TRAVEL DETAILS</div>
+            <div class="f-body">
+              <ul>
+                <li>PNR Status</li>
+                <li>Offers</li>
+                <li>Airline Routes</li>
+                <li>Train Running Status</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="f-head">OUR PRODUCTS</div>
+            <div class="f-body">
+              <ul>
+                <li>Domestic Hotels</li>
+                <li>International Hotels</li>
+                <li>Domestic Flights</li>
+                <li>International Flights</li>
+                <li>Multi-City Flights</li>
+                <li>Nearby Getaways</li>
+                <li>Bus Booking</li>
+                <li>Cab Booking</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="f-head">MORE LINKS</div>
+            <div class="f-body">
+              <ul>
+                <li>Cheap Flights</li>
+                <li>Hotels Near Me</li>
+                <li>My Bookings</li>
+                <li>Cancellation</li>
+                <li>My Account</li>
+                <li>Wallet</li>
+                <li>Advertise with Us</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <hr>
+      </div>
+      <hr />
 
-        <div class="container">
-            <div class="follow-head">
-                <h5>Follow Us</h5>
-            </div>
-            <div class="icon">
-                <div class="icons">
-                    <i class="fab fa-instagram fa-2x" style="color: #ffffff;"></i>
-                    <i class="fab fa-twitter-square fa-2x" style="color: #ffffff;"></i>
-                    <i class="fab fa-youtube fa-2x" style="color: #ffffff;"></i>
-                    <i class="fab fa-facebook fa-2x" style="color: #ffffff;"></i>
-                </div>
-            </div>
+      <div class="container">
+        <div class="follow-head">
+          <h5>Follow Us</h5>
         </div>
-        <hr>
-        <div class="container pb-3">
-            <div class="last row">
-                <div class="col-4">
-                    <div class="col" style="border-right: 1px solid #fff;">Privacy Policy</div>
-                    <div class="col" style="border-right: 1px solid #fff;">Terms & Conditions</div>
-                    <div class="col">FAQ</div>
-                </div>
-                <div class="col text-center"></div>
-                <div class="col text-end">Copyright&nbsp;&copy;2024&nbsp;Agriter. All rights reserved.</div>
-            </div>
+        <div class="icon">
+          <div class="icons">
+            <i class="fab fa-instagram fa-2x" style="color: #ffffff"></i>
+            <i class="fab fa-twitter-square fa-2x" style="color: #ffffff"></i>
+            <i class="fab fa-youtube fa-2x" style="color: #ffffff"></i>
+            <i class="fab fa-facebook fa-2x" style="color: #ffffff"></i>
+          </div>
         </div>
-
+      </div>
+      <hr />
+      <div class="container pb-3">
+        <div class="last row">
+          <div class="col-4">
+            <div class="col" style="border-right: 1px solid #fff">
+              Privacy Policy
+            </div>
+            <div class="col" style="border-right: 1px solid #fff">
+              Terms & Conditions
+            </div>
+            <div class="col">FAQ</div>
+          </div>
+          <div class="col text-center"></div>
+          <div class="col text-end">
+            Copyright&nbsp;&copy;2024&nbsp;Agriter. All rights reserved.
+          </div>
+        </div>
+      </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script/index.js"></script>
-</body>
+  </body>
 </html>

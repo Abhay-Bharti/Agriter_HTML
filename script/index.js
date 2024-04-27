@@ -1,17 +1,16 @@
-$(document).ready(function() {
+$(document).ready(function () {
+  var windowWidth = $(window).width();
+  if (windowWidth <= 991) {
+    $(".offcanvas").addClass("bg-change");
+  } else {
+    $(".offcanvas").removeClass("bg-change");
+  }
 
-    var windowWidth = $(window).width();
-    if (windowWidth <= 576) {
-      $('.offcanvas').addClass('bg-change');
+  $(window).scroll(function () {
+    if (window.scrollY >= 40) {
+      $(".navbar").addClass("navbar-scrolled");
     } else {
-      $('.offcanvas').removeClass('bg-change');
+      $(".navbar").removeClass("navbar-scrolled");
     }
-
-    $(window).scroll(function(){
-        if(window.scrollY >= 40){
-            $('.navbar').addClass('navbar-scrolled');
-        } else {
-            $('.navbar').removeClass('navbar-scrolled');
-        }
-    });
+  });
 });
