@@ -2,7 +2,7 @@
 
 Welcome to the **Agriter** repository, a comprehensive platform designed to bridge the gap between farmers and tourists, providing unique agri-tourism experiences.
 
-Live Demo: [Agriter Website](https://abhay-bharti.github.io/Agriter/) 
+Live Demo: [Agriter Website](https://abhay-bharti.github.io/Agriter_HTML/) 
 ---
 
 ## **About the Name**
